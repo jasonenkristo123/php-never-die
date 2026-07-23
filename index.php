@@ -21,3 +21,10 @@ echo PI;
 var_dump($nama1);
 echo var_dump($nama2);
 echo gettype($nama1);
+
+$elek = [
+    "name" => "brody",
+    "age" => "30"
+];
+
+echo $elek['name'];
