@@ -28,3 +28,51 @@ $elek = [
 ];
 
 echo $elek['name'];
+
+$a = 10;
+$b = 20;
+
+echo $a + $b;
+
+$text = "ABCD";
+
+echo strlen($text);
+echo strtoupper($text);
+echo strtolower($text);
+
+// pengganti switch adalah match
+$status = "paid";
+
+$message = match ($status) {
+    "paid" => "Terima kasih",
+    "pending" => "Menunggu",
+    "cancelled" => "Dibatalkan",
+    default => "Status tidak dikenali",
+};
+
+echo $message;
+
+// $students = [
+//     "Ciy",
+//     "Coy",
+//     "Coz"
+// ];
+
+// foreach ($students as $murid) {
+//     echo $murid . "<br>";
+// }
+
+$students = [
+    [
+        "name" => "Jason",
+        "score" => 90
+    ],
+    [
+        "name" => "Budi",
+        "score" => 75
+    ],
+    [
+        "name" => "Andi",
+        "score" => 60
+    ]
+];
