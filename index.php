@@ -111,7 +111,7 @@ class User {
     public string $name;
     public int $age;
 
-    public function construct(string $name, int $age) {
+    public function __construct(string $name, int $age) {
         $this->name = $name;
         $this->age = $age;
     }
@@ -120,3 +120,21 @@ class User {
 $user = new User("John", 30);
 $user->name = "Toji";
 $user->age = 10;
+
+
+class Greeter {
+    public function greet($message) {
+        echo $message;
+    }
+}
+
+$greeter = new Greeter();
+$greeter->greet("haloo");
+
+class Math {
+    public static function add(int $a, int $b) {
+        return $a + $b;
+    }
+}
+
+echo Math::add(19, 20); // static pakai ::
