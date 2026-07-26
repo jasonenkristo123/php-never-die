@@ -76,3 +76,29 @@ $students = [
         "score" => 60
     ]
 ];
+
+foreach ($students as $student) {
+    if ($student["score"] >= 70) {
+        echo $student["name"] . " lulus<br>";
+    } else {
+        echo $student["name"] . " tidak lulus<br>";
+    }
+}
+
+function add(int $a, int $b): int {
+    return $a + $b;
+}
+
+function substract(?int $b, ?int $c): ?int {
+    return $b - $c;
+}
+
+function greet($guest = "Hudi") {
+    echo "Hello $guest";
+}
+
+greet();
+
+add(10, 20);
+echo (add(10, 20));
+echo (substract(10, 20));
