@@ -138,3 +138,11 @@ class Math {
 }
 
 echo Math::add(19, 20); // static pakai ::
+
+class Message {
+    public static function getMessage(string $status): string {
+        return $status;
+    }
+}
+
+echo Message::getMessage("woi");
