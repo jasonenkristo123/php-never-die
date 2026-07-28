@@ -146,3 +146,13 @@ class Message {
 }
 
 echo Message::getMessage("woi");
+
+class Logic {
+    public static function Times(int $a, int $b): int {
+        if ($a < 0 || $b < 0) {
+            return 0;
+        }
+        return $a * $b;
+    }
+
+}
