@@ -1,3 +1,12 @@
+<?php
+
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $nama = $_POST['Nama'];
+        echo "<h2>Hello, $nama</h2>";
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,29 +21,9 @@
 
     <form method="POST">
         <div>
-            <label for="name">Name : </label>
-            <input type="text" id="name" name="name">
-        </div>
-
-        <br>
-
-        <div>
-            <label for="nim">Nim : </label>
-            <input type="text" id="nim" name="nim">
-        </div>
-
-        <br>
-
-        <div>
-            <label for="major">Major : </label>
-            <input type="text" id="major" name="major">
-        </div>
-
-        <br>
-
-        <div>
-            <label for="semester">Semester : </label>
-            <input type="text" id="semester" name="semester">
+            <label for="Nama">Nama : </label>
+            <br>
+            <input type="text" name="Nama">
         </div>
 
         <button type="submit">
