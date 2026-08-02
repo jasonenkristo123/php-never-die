@@ -8,8 +8,6 @@ $stmt = $pdo->query($query);
 
 $students = $stmt->fetchAll();
 
-// echo "<pre>";
+    echo "<pre>";
 
 print_r($students);
-
-echo "</pre>";
