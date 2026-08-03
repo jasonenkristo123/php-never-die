@@ -11,3 +11,5 @@ $students = $stmt->fetchAll();
     echo "<pre>";
 
 print_r($students);
+
+print_r($pdo);
