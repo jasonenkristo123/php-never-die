@@ -11,7 +11,3 @@ $students = $stmt->fetchAll();
     echo "<pre>";
 
 print_r($students);
-
-for ($i = 0; $i < count($students); $i++) {
-    echo $students[$i]["name"] . "<br>";
-}
